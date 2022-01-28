@@ -50,6 +50,7 @@ pipeline {
                     }
                     stage("Paso 6: Levantar Artefacto Jar"){
                         sh 'ls'
+                        sh 'pwd'
                         sh 'nohup bash java -jar DevOpsUsach2020-0.0.1.jar & >/dev/null'
                     }
                     stage("Paso 7: Testear Artefacto - Dormir(Esperar 20sg) "){
